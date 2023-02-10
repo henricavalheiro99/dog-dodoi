@@ -1,0 +1,181 @@
+:root {
+    --cor-principal: #EA1C81;
+    --cor-topo: #D8F1FB;
+    --cor-preta: black;
+    --cor-branca: white;
+    --cor-cor-fundo: #FAFBFF;
+
+
+
+
+}
+
+
+* {
+    margin: 0px;
+    /* margem */
+    padding: 0px;
+    /* espaçamrnto interno */
+    transition: all 1s;
+    box-sizing: border-box;
+    /* alinha o texto dentro do layout */
+}
+
+
+#header {
+    background-color: var(--cor-topo);
+    display: flex;
+    /* tira a organização em bloco e deixa em linha */
+    justify-content: space-between;
+    /* deixa um espaço entre duas coisas */
+    align-items: center;
+}
+
+
+#header nav a {
+    text-decoration: none;
+    color: var(--cor-preta);
+}
+
+
+#header nav a:hover {
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+    border-radius: 20px;
+    font-weight: 700px;
+
+}
+
+.marginLateral {
+    margin: 0px 20px;
+}
+
+main #banner {
+    background-image: url("../img/Banner.png");
+    height: calc(100vh - 116px);
+    /* a subtração é feita com a soma do número multiplicado e da cima e embaixo (76+20.2) */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    /* quando se trabalha com colunas o eixo X e Y invertem */
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-principal)
+}
+
+.margimCimaBaixo {
+    padding: 20px;
+
+}
+
+main #banner h1 {
+    color: var(--cor-principal);
+    font-size: 2em;
+    /* Em vai ser uma medida relativa ao dispositivo e em convenção vale 16pt (pontos)*/
+}
+
+main #banner button {
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+    border: none;
+    border-radius: 20px;
+}
+
+main #banner button:hover {
+    cursor: pointer;
+}
+
+#header,
+main #banner button,
+#header nav a:hover,
+#bemVindo div,
+main #beneficios #beneficios-nossosbeneficios,
+main #beneficios #beneficios-servicos,
+#rodape,
+main #form #form-formulario form,
+main #form #form-formulario-login form{
+    padding: 15px;
+}
+
+/* aq vc seleciona os itens com o mesmo padding para ficar igual, basta colocar um atrás do outro com vírgulas */
+
+#bemVindo {
+    display: grid;
+    /* grid manda a divisória receber uma quantidade de frações*/
+    grid-template-columns: 1fr 1fr;
+    /* número de frações */
+}
+
+#bemVindo #boasVindas h3 {
+    color: var(--cor-principal);
+    margin-bottom: 10px;
+}
+
+main #beneficios {
+    background-color: var(--cor-cor-fundo);
+    color: var(--cor-principal);
+}
+
+main #beneficios #beneficios-nossosbeneficios,
+main #form #form-texto,
+main #beneficios #beneficios-servicos, 
+#rodape{
+    text-align: center;
+}
+/* esses são dois jeitos de programar a parte dos 3 icones */
+
+main #beneficios #beneficios-servicos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+main #form #form-formulario form,
+main #form #form-formulario-login form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+main #form #form-formulario form input,
+main #form #form-formulario-login form input{
+    display: block;
+    padding: 8px;
+    border: none;
+    outline: none;
+    /* tira a borda mais forte */
+    border-bottom: 1px solid black;
+    /* seleciona 1px em linha reta */
+    border-radius: 10px;
+    width: 400px;
+    margin-bottom: 10px;
+}
+
+main #form #form-formulario form button,
+main #form #form-formulario-login form button{
+    padding: 8px;
+    border: none;
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+    border-radius: 10px;
+    width: 380px;
+    cursor: pointer;
+}
+
+main #form #form-formulario{
+    background-image: url(../img/dog.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#rodape {
+    background-color: var(--cor-topo);
+}
+
+#inscrevase{
+    text-align: center;
+    padding: 100px;
+}
+
