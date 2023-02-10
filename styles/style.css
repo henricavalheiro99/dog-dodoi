@@ -4,10 +4,6 @@
     --cor-preta: black;
     --cor-branca: white;
     --cor-cor-fundo: #FAFBFF;
-
-
-
-
 }
 
 
@@ -16,13 +12,13 @@
     /* margem */
     padding: 0px;
     /* espaçamrnto interno */
-    transition: all 1s;
+    transition: all 0.4s;
     box-sizing: border-box;
     /* alinha o texto dentro do layout */
 }
 
 
-#header {
+#header{
     background-color: var(--cor-topo);
     display: flex;
     /* tira a organização em bloco e deixa em linha */
@@ -38,7 +34,7 @@
 }
 
 
-#header nav a:hover {
+#header nav a:hover{
     background-color: var(--cor-principal);
     color: var(--cor-branca);
     border-radius: 20px;
@@ -121,12 +117,14 @@ main #beneficios {
 main #beneficios #beneficios-nossosbeneficios,
 main #form #form-texto,
 main #beneficios #beneficios-servicos, 
-#rodape{
+#rodape,
+#inscrevase,
+#form a{
     text-align: center;
 }
 /* esses são dois jeitos de programar a parte dos 3 icones */
 
-main #beneficios #beneficios-servicos {
+main #beneficios #beneficios-servicos{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
@@ -140,7 +138,8 @@ main #form #form-formulario-login form{
 }
 
 main #form #form-formulario form input,
-main #form #form-formulario-login form input{
+main #form #form-formulario-login form input,
+#form a{
     display: block;
     padding: 8px;
     border: none;
@@ -154,7 +153,8 @@ main #form #form-formulario-login form input{
 }
 
 main #form #form-formulario form button,
-main #form #form-formulario-login form button{
+main #form #form-formulario-login form button,
+#form a{
     padding: 8px;
     border: none;
     background-color: var(--cor-principal);
@@ -162,6 +162,9 @@ main #form #form-formulario-login form button{
     border-radius: 10px;
     width: 380px;
     cursor: pointer;
+    margin-bottom: 10px;
+    text-decoration: none;
+
 }
 
 main #form #form-formulario{
@@ -175,7 +178,16 @@ main #form #form-formulario{
 }
 
 #inscrevase{
-    text-align: center;
     padding: 100px;
 }
+
+main #form #form-formulario-login form button:hover,
+#form a:hover{
+    font-size: large;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+
 

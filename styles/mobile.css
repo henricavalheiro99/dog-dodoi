@@ -19,3 +19,10 @@
         display: block;
     }
 }
+
+@media(max-width: 415px){
+    main #form #form-formulario form,
+    main #form #form-formulario-login form{
+        display: block;
+    }
+}
